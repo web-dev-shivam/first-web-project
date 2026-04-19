@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account | Shivam Sharma Projects</title>
+        </head>
+        <body>
+            <h2>Sign up Now</h2>
+            <h2>Create an Account</h2>
+
+    <form action="/register" method="POST">
+        <div>
+            <input type="text" name="Email id" placeholder="Email id" required>
+        </div>
+        <br>
+        <div>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+<br><br>
+Already have an account? <button style="color: rgb(52, 52, 109);">
+  Log in
+</button>
+<br>
+_____________or_____________
+<br><br> 
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<div id="g_id_onload"
+     data-client_id="695717560712- jm31eupkvdekcva4hhfuvtkqrcgqes7|.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse">
+</div>
+
+<div class="g_id_signin" 
+     data-type="standard" 
+     data-width="250">
+</div>
+
+<script>
+function handleCredentialResponse(response) {
+    console.log(response);
+    alert("Login Successful");
+}
+</script>
+
+        </html>
+        </body>
